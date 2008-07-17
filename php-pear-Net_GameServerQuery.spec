@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - interface to query a game server
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Net_GameServerQuery/
@@ -17,7 +17,7 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Net_GameServerQuery is an object for querying game servers.

@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - interface to query a game server
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	%mkrel 9
+Release:	%mkrel 10
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Net_GameServerQuery/

@@ -1,0 +1,410 @@
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Config.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Config.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Config.php	2004-11-23 03:34:14.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Config.php	2009-11-22 14:54:44.000000000 +0100
+@@ -61,7 +61,7 @@
+     public function __construct()
+     {
+         // Load the game config
+-        require 'Games.php';
++        require 'Net/GameServerQuery/Games.php';
+         $this->_games   = $games;
+         $this->_packets = $packets;
+         $this->_normals = $normals;
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Breed.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Breed.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Breed.php	2004-11-23 03:51:53.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Breed.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Breed.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+@@ -37,4 +37,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Doom3.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Doom3.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Doom3.php	2004-11-23 03:51:50.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Doom3.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Doom3.php,v 1.10 2004/09/14 10:47:40 ortega Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/FarCry.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/FarCry.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/FarCry.php	2004-11-23 03:51:47.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/FarCry.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: FarCry.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Freelancer.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Freelancer.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Freelancer.php	2004-11-23 03:51:41.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Freelancer.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Freelancer.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GameSpy04.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GameSpy04.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GameSpy04.php	2004-11-23 03:51:32.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GameSpy04.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: GameSpy04.php,v 1.13 2004/11/05 15:23:33 ortega Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GhostRecon.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GhostRecon.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GhostRecon.php	2004-11-23 03:51:28.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/GhostRecon.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: GhostRecon.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HalfLife.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HalfLife.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HalfLife.php	2004-11-23 03:51:18.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HalfLife.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: HalfLife.php,v 1.18 2004/09/18 14:26:02 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Hexen2.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Hexen2.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Hexen2.php	2004-11-23 03:51:15.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Hexen2.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Hexen2.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HomeWorld2.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HomeWorld2.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HomeWorld2.php	2004-11-23 03:50:54.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/HomeWorld2.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: HomeWorld2.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight2.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight2.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight2.php	2004-11-23 03:50:44.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight2.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: JediKnight2.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight.php	2004-11-23 03:50:30.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/JediKnight.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: JediKnight.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/MultiTheftAuto.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/MultiTheftAuto.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/MultiTheftAuto.php	2004-11-23 03:50:19.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/MultiTheftAuto.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: MultiTheftAuto.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Quake2.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Quake2.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Quake2.php	2004-11-23 03:49:58.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Quake2.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Quake2.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/QuakeWorld.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/QuakeWorld.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/QuakeWorld.php	2004-11-23 03:49:47.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/QuakeWorld.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: QuakeWorld.php,v 1.9 2004/09/14 11:20:49 ortega Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RavenShield.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RavenShield.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RavenShield.php	2004-11-23 03:49:44.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RavenShield.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: RavenShield.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+@@ -37,4 +37,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RedFaction.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RedFaction.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RedFaction.php	2004-11-23 03:49:32.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/RedFaction.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: RedFaction.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+@@ -37,4 +37,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Savage.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Savage.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Savage.php	2004-11-23 03:49:05.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Savage.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Savage.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+@@ -37,4 +37,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Starsiege.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Starsiege.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Starsiege.php	2004-11-23 03:49:07.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Starsiege.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Starsiege.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+@@ -37,4 +37,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Tribes.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Tribes.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Tribes.php	2004-11-23 03:49:09.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Tribes.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Tribes.php,v 1.1 2004/09/18 14:20:33 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+@@ -37,4 +37,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Unreal2XMP.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Unreal2XMP.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Unreal2XMP.php	2004-11-23 03:49:11.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/Unreal2XMP.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: Unreal2XMP.php,v 1.5 2004/09/14 10:47:40 ortega Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament03.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament03.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament03.php	2004-11-23 03:49:13.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament03.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: UnrealTournament03.php,v 1.4 2004/09/14 10:47:40 ortega Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament.php	2004-11-23 03:48:14.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery/Protocol/UnrealTournament.php	2009-11-22 15:06:03.000000000 +0100
+@@ -19,7 +19,7 @@
+ // $Id: UnrealTournament.php,v 1.3 2004/09/18 14:20:51 aidan Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Protocol.php';
++require_once 'Net/GameServerQuery/Protocol.php';
+ 
+ 
+ /**
+@@ -37,4 +37,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery.php php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery.php
+--- php-pear-Net_GameServerQuery-0.2.0/Net_GameServerQuery-0.2.0/GameServerQuery.php	2004-11-23 03:44:34.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/Net_GameServerQuery-0.2.0/GameServerQuery.php	2009-11-22 14:53:18.000000000 +0100
+@@ -19,9 +19,9 @@
+ // $Id: GameServerQuery.php,v 1.45 2004/11/15 18:52:01 ortega Exp $
+ 
+ 
+-require_once 'Net\GameServerQuery\Config.php';
+-require_once 'Net\GameServerQuery\Communicate.php';
+-require_once 'Net\GameServerQuery\Process.php';
++require_once 'Net/GameServerQuery/Config.php';
++require_once 'Net/GameServerQuery/Communicate.php';
++require_once 'Net/GameServerQuery/Process.php';
+ 
+ 
+ /**
+@@ -300,4 +300,4 @@
+ 
+ }
+ 
+-?>
+\ Pas de fin de ligne à la fin du fichier.
++?>
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' php-pear-Net_GameServerQuery-0.2.0/package.xml php-pear-Net_GameServerQuery-0.2.0-fix-path/package.xml
+--- php-pear-Net_GameServerQuery-0.2.0/package.xml	2004-11-23 07:25:08.000000000 +0100
++++ php-pear-Net_GameServerQuery-0.2.0-fix-path/package.xml	2009-11-22 15:10:04.000000000 +0100
+@@ -34,34 +34,34 @@
+       <dep type="php" rel="ge" version="5.0.0"/>
+     </deps>
+     <filelist>
+-      <file role="php" baseinstalldir="Net" md5sum="7c60c99bb798e34385e84f1c3fecbe63" name="GameServerQuery.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="ac35791e6e52e57e6ea1c184c0fcffac" name="GameServerQuery.php"/>
+       <file role="php" baseinstalldir="Net" md5sum="46a6c464bcf236154d0b18435e96cf95" name="GameServerQuery\Communicate.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="b969c787760a300d81fe4ef2874bc065" name="GameServerQuery\Config.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="883aabc53a1c2e99006dc810ad9129fe" name="GameServerQuery\Config.php"/>
+       <file role="php" baseinstalldir="Net" md5sum="3ff58f53618e13949dfbb6e729afb97e" name="GameServerQuery\Games.php"/>
+       <file role="php" baseinstalldir="Net" md5sum="5bd9263a194a56ee3d1a55a95c62146c" name="GameServerQuery\Process.php"/>
+       <file role="php" baseinstalldir="Net" md5sum="0c04f52e5c8eef2dddb4861f579441e3" name="GameServerQuery\Protocol.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="6e49c727fcf0caac3e3402f6922dd925" name="GameServerQuery\Protocol\Breed.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="e7c4cbf1567a9f6889954a09d5a0b65f" name="GameServerQuery\Protocol\Doom3.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="27564ce08e5ce52f6172e490a348ad7c" name="GameServerQuery\Protocol\FarCry.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="565481f537a13eabc8f554228ffe868a" name="GameServerQuery\Protocol\Freelancer.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="fd968aa06cf33316e454fb4de046cc24" name="GameServerQuery\Protocol\GameSpy04.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="1a27f0e72a00d29c154a02cfc1b2218b" name="GameServerQuery\Protocol\GhostRecon.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="062c2b1e2f7f0f232bc3162802681393" name="GameServerQuery\Protocol\HalfLife.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="8211042c3fc427fbc2d40a887103315c" name="GameServerQuery\Protocol\Hexen2.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="531aefd2c7ca8259cbd33ada7e8bb4ee" name="GameServerQuery\Protocol\HomeWorld2.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="5b7199ce5c2849719d7fe42dfc7410d4" name="GameServerQuery\Protocol\JediKnight.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="9d1e76903510cdd4230da0f5caea31e4" name="GameServerQuery\Protocol\JediKnight2.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="6f06e037f70614deaf006f7f365d79cb" name="GameServerQuery\Protocol\MultiTheftAuto.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="34f30938c68500aff8ac3f66ff10ef57" name="GameServerQuery\Protocol\Quake2.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="9cfdbad2670cae70b6c991b1ba06c1fc" name="GameServerQuery\Protocol\QuakeWorld.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="5f73a8b2056a663d64e6788537e79865" name="GameServerQuery\Protocol\RavenShield.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="abc5da65a891a61443adca45795a8775" name="GameServerQuery\Protocol\RedFaction.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="fb20c20ea2474576b162d2f7cee2c8eb" name="GameServerQuery\Protocol\Savage.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="ff390a93840aae024b502bafb0b0a24f" name="GameServerQuery\Protocol\Starsiege.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="001a315f3fee6b0dd960574406d52c1b" name="GameServerQuery\Protocol\Tribes.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="b99e158314b0bac8271b429b5a2ffec6" name="GameServerQuery\Protocol\Unreal2XMP.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="8bd63571b3bdb3e520e894c5d155e461" name="GameServerQuery\Protocol\UnrealTournament.php"/>
+-      <file role="php" baseinstalldir="Net" md5sum="8a0b2ded6a5606890425fda6232eff4a" name="GameServerQuery\Protocol\UnrealTournament03.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="2c4bfa842c8a6aa1685b85c8af853658" name="GameServerQuery\Protocol\Breed.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="390b6a16912855e9f4b350f47e90d871" name="GameServerQuery\Protocol\Doom3.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="3005e2cf4bc096f28bfb0253477830ff" name="GameServerQuery\Protocol\FarCry.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="0d7b9076cea0a1c21c4d3b22dae87d40" name="GameServerQuery\Protocol\Freelancer.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="cda364c53bd57ebe4f6232e87ec90e85" name="GameServerQuery\Protocol\GameSpy04.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="9645b84b9648c5e60669cd8b2e76b2c9" name="GameServerQuery\Protocol\GhostRecon.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="543ad01981258ad00e1c8bb28cd2b5f3" name="GameServerQuery\Protocol\HalfLife.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="54ce968693100b738bd4648c91374372" name="GameServerQuery\Protocol\Hexen2.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="360dd43748d8022b0eef92e4dcb27a13" name="GameServerQuery\Protocol\HomeWorld2.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="2bce295ada83014fa0df494e75e77b29" name="GameServerQuery\Protocol\JediKnight.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="466a7e29b73647938ad62fbc7d711fb0" name="GameServerQuery\Protocol\JediKnight2.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="391f8b7be321411dde2b549e3baa558d" name="GameServerQuery\Protocol\MultiTheftAuto.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="6cf15038341bb5d565655768c17602cd" name="GameServerQuery\Protocol\Quake2.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="c78017ac607685703e202ba48b83c27b" name="GameServerQuery\Protocol\QuakeWorld.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="89624c793dcde293eb531322090fcbda" name="GameServerQuery\Protocol\RavenShield.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="53f5bb25c6eea9923ae257034ad1629c" name="GameServerQuery\Protocol\RedFaction.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="7056ecfc094301effa868b9e5f83500e" name="GameServerQuery\Protocol\Savage.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="3ed0264652a910e6b682cc20965bad1c" name="GameServerQuery\Protocol\Starsiege.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="bfd79e9601b06130f40f809ffaf9892d" name="GameServerQuery\Protocol\Tribes.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="6c911bfe084140ab61c72092ae83888a" name="GameServerQuery\Protocol\Unreal2XMP.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="14566c0dc3ea01f53619e8174cbcd239" name="GameServerQuery\Protocol\UnrealTournament.php"/>
++      <file role="php" baseinstalldir="Net" md5sum="824c7a4166183a42cd53fbf0d5c6e2fe" name="GameServerQuery\Protocol\UnrealTournament03.php"/>
+     </filelist>
+   </release>
+ </package>

@@ -8,7 +8,7 @@ Release:	17
 Summary:	Interface to query a game server
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/Net_GameServerQuery/
+URL:		https://pear.php.net/package/Net_GameServerQuery/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
 Patch0:		php-pear-Net_GameServerQuery-0.2.0-fix-path.patch
 Requires(post): php-pear
